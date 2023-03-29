@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "733348671945",
+    "project_id": "ludo-hub-89b1b",
+    "storage_bucket": "ludo-hub-89b1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733348671945:android:7f792a0816fc2ba1003818",
+        "android_client_info": {
+          "package_name": "com.ludohub.ludogame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733348671945-vohg5nhe53pbvrua56ic22neabgklqpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzXxbr4Y-jwNbe43K2g0cq46s6lUX_jPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733348671945-vohg5nhe53pbvrua56ic22neabgklqpf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

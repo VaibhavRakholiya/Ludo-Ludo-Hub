@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{0e9cf0e7-05e1-0695-be52-a6f3fa1c43db}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeCamera.Runtime", "NativeCamera.Runtime.csproj", "{aedb9d57-92dd-7e67-0acd-77bdad23d709}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeGallery.Runtime", "NativeGallery.Runtime.csproj", "{049b2d65-4cb2-22e4-be47-30fa083b655d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{8ef8ae2d-100b-d116-84c6-24b6ca3cf610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{c3712a65-7855-1f2a-14ce-f3a09d69c9f8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeCamera.Editor", "NativeCamera.Editor.csproj", "{0071b153-4148-657a-f9e1-2f103032ca65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeGallery.Editor", "NativeGallery.Editor.csproj", "{28ed6748-3f4f-93c2-c5d4-b015e2638bb4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0e9cf0e7-05e1-0695-be52-a6f3fa1c43db}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0e9cf0e7-05e1-0695-be52-a6f3fa1c43db}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{aedb9d57-92dd-7e67-0acd-77bdad23d709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{aedb9d57-92dd-7e67-0acd-77bdad23d709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049b2d65-4cb2-22e4-be47-30fa083b655d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049b2d65-4cb2-22e4-be47-30fa083b655d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ef8ae2d-100b-d116-84c6-24b6ca3cf610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ef8ae2d-100b-d116-84c6-24b6ca3cf610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c3712a65-7855-1f2a-14ce-f3a09d69c9f8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c3712a65-7855-1f2a-14ce-f3a09d69c9f8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0071b153-4148-657a-f9e1-2f103032ca65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0071b153-4148-657a-f9e1-2f103032ca65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28ed6748-3f4f-93c2-c5d4-b015e2638bb4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28ed6748-3f4f-93c2-c5d4-b015e2638bb4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">733348671945</string>
+  <string name="google_storage_bucket" translatable="false">ludo-hub-89b1b.appspot.com</string>
+  <string name="project_id" translatable="false">ludo-hub-89b1b</string>
+  <string name="google_api_key" translatable="false">AIzaSyBzXxbr4Y-jwNbe43K2g0cq46s6lUX_jPY</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBzXxbr4Y-jwNbe43K2g0cq46s6lUX_jPY</string>
+  <string name="google_app_id" translatable="false">1:733348671945:android:7f792a0816fc2ba1003818</string>
+  <string name="default_web_client_id" translatable="false">733348671945-vohg5nhe53pbvrua56ic22neabgklqpf.apps.googleusercontent.com</string>
+</resources>
