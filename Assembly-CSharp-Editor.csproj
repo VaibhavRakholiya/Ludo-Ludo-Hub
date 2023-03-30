@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{c3712a65-7855-1f2a-14ce-f3a09d69c9f8}</ProjectGuid>
+    <ProjectGuid>{08cb0c56-dc93-30af-1815-6a6d8d00a756}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -329,67 +329,67 @@
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Google.PackageManagerResolver">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.PackageManagerResolver.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.PackageManagerResolver.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Messaging.Editor">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Firebase/Editor/Firebase.Messaging.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Editor/Firebase.Messaging.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.App">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.TaskExtension">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
      </Reference>
      <Reference Include="Google.VersionHandler">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
      </Reference>
      <Reference Include="Google.IOSResolver">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.IOSResolver.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.IOSResolver.dll</HintPath>
      </Reference>
      <Reference Include="Photon3Unity3D">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Plugins/Photon3Unity3D.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Messaging">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Firebase/Plugins/Firebase.Messaging.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.Messaging.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Editor">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Tasks">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
      </Reference>
      <Reference Include="Google.VersionHandlerImpl">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.VersionHandlerImpl.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.VersionHandlerImpl.dll</HintPath>
      </Reference>
      <Reference Include="Google.JarResolver">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.JarResolver.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.JarResolver.dll</HintPath>
      </Reference>
      <Reference Include="Google.MiniJson">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Platform">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Compat">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -779,77 +779,77 @@
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.TestRunner">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.TestRunner">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Analytics">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Environments">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>/Users/user/UnityProjects/LudoGames/Ludo Hub/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{8ef8ae2d-100b-d116-84c6-24b6ca3cf610}</Project>
+      <Project>{a2920bd9-03d3-e447-da28-0613a08305fe}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{0e9cf0e7-05e1-0695-be52-a6f3fa1c43db}</Project>
+      <Project>{ee612bed-0485-bbf5-36c5-06ffdcbed00c}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="NativeCamera.Runtime.csproj">
-      <Project>{aedb9d57-92dd-7e67-0acd-77bdad23d709}</Project>
+      <Project>{e12fca04-513b-5d9e-7f52-6c2566ffe0c5}</Project>
       <Name>NativeCamera.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="NativeGallery.Editor.csproj">
-      <Project>{28ed6748-3f4f-93c2-c5d4-b015e2638bb4}</Project>
+      <Project>{bd30662b-fb15-e3a3-5b28-7967f6ca0166}</Project>
       <Name>NativeGallery.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NativeGallery.Runtime.csproj">
-      <Project>{049b2d65-4cb2-22e4-be47-30fa083b655d}</Project>
+      <Project>{6778b125-8d64-edee-ed27-c05be0ca2c5c}</Project>
       <Name>NativeGallery.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="NativeCamera.Editor.csproj">
-      <Project>{0071b153-4148-657a-f9e1-2f103032ca65}</Project>
+      <Project>{681b2732-6097-5a93-36bb-f443043e3773}</Project>
       <Name>NativeCamera.Editor</Name>
     </ProjectReference>
   </ItemGroup>

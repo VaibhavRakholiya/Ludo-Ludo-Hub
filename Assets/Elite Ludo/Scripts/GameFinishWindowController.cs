@@ -78,7 +78,7 @@ public class GameFinishWindowController : MonoBehaviour
         else
         {
             if(!GameManager.Instance.Historycalled)
-            StartCoroutine(HistoryRepeat());
+                StartCoroutine(HistoryRepeat());
         }
     }
 
@@ -86,7 +86,7 @@ public class GameFinishWindowController : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f);
         if (FindObjectOfType<GameGUIController>().WonApicalled && !GameManager.Instance.Historycalled)
-        StartCoroutine(History());
+            StartCoroutine(History());
         else if(!GameManager.Instance.Historycalled)
             StartCoroutine(HistoryRepeat());
 
@@ -96,7 +96,6 @@ public class GameFinishWindowController : MonoBehaviour
     string status = "";
     public IEnumerator History()
     {
-
         Debug.Log("$$$$$$$$$$$$$$$ this is history $$$$$$$$$$$$$$$$$$$$$$$$$$");
         GameManager.Instance.Historycalled = true;
         string seat = "";
@@ -116,7 +115,7 @@ public class GameFinishWindowController : MonoBehaviour
             form.AddField("oppo3", GameManager.Instance.Name3.ToString());
        
 
-        string url = StaticStrings.baseURL + "api/player/playerhistory";  // ye api hai
+        string url = StaticStrings.baseURL + "api/player/playerhistory"; 
 
         using (UnityWebRequest handshake = UnityWebRequest.Post(url, form))
         {
@@ -127,11 +126,7 @@ public class GameFinishWindowController : MonoBehaviour
             {
                 Debug.Log(handshake.error.ToString());
             }
-
-            else
-            {
-
-            }
+           
         }
     }
 }

@@ -295,7 +295,6 @@ public class LudoPawnController : MonoBehaviour
         {
             if (isOnBoard)
             {
-
                 if (pawnInJoint != null)
                 {
                     if (steps % 2 != 0)
@@ -482,14 +481,14 @@ public class LudoPawnController : MonoBehaviour
         if (GameManager.Instance.isLocalPLay)
         { MakeLocalMove();        return; }
 
-            if (pawnInJoint != null) ludoController.steps /= 2;
+        if (pawnInJoint != null) ludoController.steps /= 2;
 
         myTurn = false;
         ludoController.gUIController.PauseTimers();
 
         if (!isOnBoard)
         {
-            GoToStartPosition();//GoToInitPosition(true);
+            GoToStartPosition(); //GoToInitPosition(true);
         }
         else
         {
@@ -520,7 +519,7 @@ public class LudoPawnController : MonoBehaviour
 
         if (!isOnBoard)
         {
-            GoToStartPosition();//GoToInitPosition(true);// 
+            GoToStartPosition(); //GoToInitPosition(true);// 
         }
         else
         {
@@ -756,7 +755,6 @@ public class LudoPawnController : MonoBehaviour
             startPos = -offset * 1.5f;
             scale = 0.75f;
         }*/
-
 
         // Get my pawns, push on top of stack
         List<int> orderPawns = new List<int>();

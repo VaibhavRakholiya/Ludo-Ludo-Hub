@@ -146,16 +146,12 @@ public class GameGUIController : PunBehaviour
         }
         FinishedGamee = false;
 
-
         if (PhotonNetwork.isMasterClient)
         {
-
             photonView.RPC("SyncNames", PhotonTargets.OthersBuffered, GameManager.Instance.opponentsNames[0], GameManager.Instance.opponentsNames[1], GameManager.Instance.opponentsNames[2], GameManager.Instance.opponentsAvatarsIndex[0], GameManager.Instance.opponentsAvatarsIndex[1], GameManager.Instance.opponentsAvatarsIndex[2]);
             Proceed();
         }
-
         GameManager.Instance.Historycalled = false;
-
     }
 
 
@@ -402,12 +398,7 @@ public class GameGUIController : PunBehaviour
                     PlayersAvatarsButton[index].GetComponent<Button>().onClick.RemoveAllListeners();
                     PlayersAvatarsButton[index].GetComponent<Button>().onClick.AddListener(() => ButtonClick(id));
                 }
-
             }
-
-
-
-
             playerObjects[i].AvatarObject = ActivePlayers[index];
             ActivePlayers[index].GetComponent<PlayerAvatarController>().Name.GetComponent<Text>().text = playerObjects[i].name;
             if (playerObjects[i].avatar != null)
@@ -431,12 +422,6 @@ public class GameGUIController : PunBehaviour
 
         currentPlayerIndex = GameManager.Instance.firstPlayerInGame;
         GameManager.Instance.currentPlayer = playerObjects[currentPlayerIndex];
-
-
-
-
-
-
         GameManager.Instance.playerObjects = playerObjects;
 
 
@@ -649,16 +634,7 @@ public class GameGUIController : PunBehaviour
             {
                 //  print("Joinnn");
                 Rejoin();
-
-
             }
-
-
-
-
-
-
-
         }
     }
 
@@ -805,7 +781,6 @@ public class GameGUIController : PunBehaviour
 
     private IEnumerator JoinFees()
     {
-
         WWWForm form = new WWWForm();
         form.AddField("playerid", PlayerPrefs.GetString("PID", ""));
         form.AddField("bidamount", PlayerPrefs.GetInt("EN", 0).ToString());
@@ -839,7 +814,6 @@ public class GameGUIController : PunBehaviour
         
         yield return new WaitForSeconds(0.1f);
 
-
         if (GameManager.Instance.readyPlayersCount < requiredToStart)
         {
             StartCoroutine(waitForPlayersToStart());
@@ -859,10 +833,7 @@ public class GameGUIController : PunBehaviour
             //     SetOpponentTurn();
             //     playerObjects[currentPlayerIndex].dice.GetComponent<GameDiceController>().DisableDiceShadow();
             // }
-
         }
-
-
     }
 
     public int GetCurrentPlayerIndex()
@@ -923,7 +894,7 @@ public class GameGUIController : PunBehaviour
     {
         StopTimers();
         if(won)
-        SetFinishGame(PhotonNetwork.player.NickName.Split('|')[1], true);
+            SetFinishGame(PhotonNetwork.player.NickName.Split('|')[1], true);
         else
             SetFinishGame(PhotonNetwork.player.NickName.Split('|')[1], false);
 
@@ -942,8 +913,6 @@ public class GameGUIController : PunBehaviour
         text = text + " " + "https://itunes.apple.com/us/app/apple-store/id" + StaticStrings.ITunesAppID;
         ScreenShotController.GetComponent<NativeShare>().ShareScreenshotWithText(text);
 #endif
-
-
     }
 
     public void ShowGameFinishWindow()
@@ -1033,7 +1002,7 @@ public class GameGUIController : PunBehaviour
         {
             SetFinishGame(GameManager.Instance.currentPlayer.id, false);
         }
-
+        
         SetFinishGame(PhotonNetwork.player.NickName, true);
     }
     private string Wintype = "twoplayerwin";
@@ -1080,8 +1049,6 @@ public class GameGUIController : PunBehaviour
                     Debug.Log("set finish call finish turn");
                     SendFinishTurn();
                 }
-
-
                 Debug.Log("--pos->"+ position);
 
                 if (position == 1)
