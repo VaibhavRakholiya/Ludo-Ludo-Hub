@@ -892,6 +892,7 @@ public class GameGUIController : PunBehaviour
     */
     public void StopAndFinishGame(bool won)
     {
+        print("StopAndFinishGame");
         StopTimers();
         if(won)
             SetFinishGame(PhotonNetwork.player.NickName.Split('|')[1], true);
@@ -917,7 +918,7 @@ public class GameGUIController : PunBehaviour
 
     public void ShowGameFinishWindow()
     {
-
+print("ShowGameFinishWindow");
         if (!FinishWindowActive)
         {
             //AdsManager.Instance.adsScript.ShowAd(AdLocation.GameFinishWindow);
@@ -996,10 +997,12 @@ public class GameGUIController : PunBehaviour
     {
         if (GameManager.Instance.currentPlayer.id == PhotonNetwork.player.NickName.Split('|')[1])
         {
+            print("log id is true");
             SetFinishGame(GameManager.Instance.currentPlayer.id, true);
         }
         else
         {
+            print("log id is false");
             SetFinishGame(GameManager.Instance.currentPlayer.id, false);
         }
         
@@ -1009,6 +1012,7 @@ public class GameGUIController : PunBehaviour
     private bool FinishedGamee = false;
     private void SetFinishGame(string id, bool me)
     {
+        print("SetFinishGame" + me);
         if (FinishedGamee)
             return;
 
@@ -1074,7 +1078,7 @@ public class GameGUIController : PunBehaviour
                         Wintype = "Private";
                         StartCoroutine(WinAmount(firstPlacePrize,true));
                     }
-             //       GameManager.Instance.myPlayerData.UpdateUserData(data);
+                    //       GameManager.Instance.myPlayerData.UpdateUserData(data);
 
                     //call api to update game played
                     // string url = "https://ludowire.com/admin/update-games-win.php?playfab_id="+GameManager.Instance.playfabManager.PlayFabId+"&avl_coins="+data[MyPlayerData.CoinsKey]+"&total_earning="+data[MyPlayerData.TotalEarningsKey]+"&two_player_wins="+data[myPlayerData.TwoPlayerWinsKey]+"&four_player_wins="+data[MyPlayerData.FourPlayerWinsKey];
@@ -1082,6 +1086,7 @@ public class GameGUIController : PunBehaviour
                 }
                 else if (position == 2 && GameManager.Instance.type == MyGameType.FourPlayer)
                 {
+                    print("Second player win");
                     StartCoroutine(WinAmount(secondPlacePrize,true));
                     //call api to update game played
                 }
@@ -1091,7 +1096,7 @@ public class GameGUIController : PunBehaviour
                 SendFinishTurn();
             }
             controller.setPositionSprite(position);
-            CheckPlayersIfShouldFinishGame(false);
+            //CheckPlayersIfShouldFinishGame(false);
         }
     }
     private IEnumerator WinAmount(int win,bool status)
@@ -1435,6 +1440,7 @@ public class GameGUIController : PunBehaviour
 
     public void CheckPlayersIfShouldFinishGame(bool won)
     {
+        print("CheckPlayerIfShowFinishGame"+won);
         if (!FinishWindowActive)
         {
             if ((ActivePlayersInRoom == 1 && !iFinished))

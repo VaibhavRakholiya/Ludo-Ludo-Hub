@@ -89,9 +89,9 @@ public class Authenticator : MonoBehaviour
         LoadingScreen.SetActive(true);
         print("Item...fetched");
        WWWForm form = new WWWForm();
-        form.AddField("first_name", PlayerPrefs.GetString("N", "Jhonny Bro2"));
-        form.AddField("device_token", SystemInfo.deviceUniqueIdentifier + "9999");
-        form.AddField("email", PlayerPrefs.GetString("g_email", "Test2@gmail.com"));
+        form.AddField("first_name", PlayerPrefs.GetString("N", "Jhonny Bro3"));
+        form.AddField("device_token", SystemInfo.deviceUniqueIdentifier + "99999");
+        form.AddField("email", PlayerPrefs.GetString("g_email", "Test3@gmail.com"));
         string url = StaticStrings.baseURL + "api/register";
         using (UnityWebRequest handshake = UnityWebRequest.Post(url, form))
         {
