@@ -9,7 +9,6 @@ using UnityEngine.Networking;
 public class Authenticator : MonoBehaviour
 {
     public string WebClientID;
-
     public bool TestLogin;
     public GameObject LoadingScreen;
     public GameObject RefererCode;
@@ -49,7 +48,6 @@ public class Authenticator : MonoBehaviour
                 StartCoroutine(SendDataToServer());
             }
         }
-        
     }
 
     public void GoogleLogin()
@@ -85,13 +83,12 @@ public class Authenticator : MonoBehaviour
 
     IEnumerator SendDataToServer()
     {
-
         LoadingScreen.SetActive(true);
         print("Item...fetched");
-       WWWForm form = new WWWForm();
-        form.AddField("first_name", PlayerPrefs.GetString("N", "Jhonny Bro3"));
-        form.AddField("device_token", SystemInfo.deviceUniqueIdentifier + "99999");
-        form.AddField("email", PlayerPrefs.GetString("g_email", "Test3@gmail.com"));
+        WWWForm form = new WWWForm();
+        form.AddField("first_name", PlayerPrefs.GetString("N", "Jhonny Bro4"));
+        form.AddField("device_token", SystemInfo.deviceUniqueIdentifier + "4444");
+        form.AddField("email", PlayerPrefs.GetString("g_email", "Test4@gmail.com"));
         string url = StaticStrings.baseURL + "api/register";
         using (UnityWebRequest handshake = UnityWebRequest.Post(url, form))
         {

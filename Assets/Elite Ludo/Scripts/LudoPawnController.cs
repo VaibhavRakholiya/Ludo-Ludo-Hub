@@ -24,7 +24,7 @@ public class LudoPawnController : MonoBehaviour
     public RectTransform[] path;
     public int currentPosition = -1;
 
-    private float singlePathSpeed = 0.21f;
+    private float singlePathSpeed = 0.4f;
     private float MoveToStartPositionSpeed = 0.25f;
     private RectTransform rect;
     private Vector3 initScale;

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using SimpleJSON;
@@ -29,57 +30,44 @@ public class GameFinishWindowController : MonoBehaviour
 
     public void showWindow(List<PlayerObject> playersFinished, List<PlayerObject> otherPlayers, int firstPlacePrize, int secondPlacePrize, List<PlayerObject> playerObjects)
     {
-        if (secondPlacePrize == 0)
+
+        var finalList = playersFinished;
+        finalList.AddRange(otherPlayers);
+        
+        if (GameManager.Instance.winnersNumber == 3)
         {
             PrizeMainObjects[1].SetActive(false);
         }
 
-        prizeText[0].GetComponent<Text>().text = firstPlacePrize.ToString();
-        prizeText[1].GetComponent<Text>().text = secondPlacePrize.ToString();
-
-        Window.SetActive(true);
-        for (int i = 0; i < playersFinished.Count; i++)
+         prizeText[0].GetComponent<Text>().text = firstPlacePrize.ToString();
+         prizeText[1].GetComponent<Text>().text = secondPlacePrize.ToString();
+        
+         Window.SetActive(true);
+        for (var i = 0; i < finalList.Count; i++)
         {
             AvatarsMain[i].SetActive(true);
-            AvatarsImage[i].GetComponent<Image>().sprite = playersFinished[i].avatar;
-            Names[i].GetComponent<Text>().text = playersFinished[i].name;
-            if (playersFinished[i].id.Equals(PhotonNetwork.player.NickName.Split('|')[1]))
+            AvatarsImage[i].GetComponent<Image>().sprite = finalList[i].avatar;
+            Names[i].GetComponent<Text>().text = finalList[i].name;
+            if (finalList[i].id.Equals(PhotonNetwork.player.NickName.Split('|')[1]))
             {
                 Backgrounds[i].SetActive(true);
             }
+            //     if (otherPlayers.Count > 1)
+            //         placeIndicators[i].SetActive(false);
         }
-
-        int counter = 0;
-        for (int i = playersFinished.Count; i < playersFinished.Count + otherPlayers.Count; i++)
-        {
-            if (i == 1)
-            {
-                PrizeMainObjects[1].SetActive(false);
-            }
-            AvatarsMain[i].SetActive(true);
-            AvatarsImage[i].GetComponent<Image>().sprite = otherPlayers[counter].avatar;
-            Names[i].GetComponent<Text>().text = otherPlayers[counter].name;
-            if (otherPlayers[counter].id.Equals(PhotonNetwork.player.NickName.Split('|')[1]))
-            {
-                Backgrounds[i].SetActive(true);
-            }
-            if (otherPlayers.Count > 1)
-                placeIndicators[i].SetActive(false);
-            counter++;
-        }
-        status = "win"; WinM = PlayerPrefs.GetInt("WINAMT", 0);
+        status = "win"; 
+        WinM = PlayerPrefs.GetInt("WINAMT", 0);
         if (Names[0].GetComponent<Text>().text != GameManager.Instance.nameMy)
         {
-            WinM = 0; status = "loss";
+            WinM = 0; 
+            status = "loss";
         }
 
-        if (!GameManager.Instance.Historycalled && FindObjectOfType<GameGUIController>().WonApicalled)
-            StartCoroutine(History());
-        else
+        if (GameManager.Instance.Historycalled == false)
         {
-            if(!GameManager.Instance.Historycalled)
-                StartCoroutine(HistoryRepeat());
+            StartCoroutine(FindObjectOfType<GameGUIController>().WonApicalled ? History() : HistoryRepeat());
         }
+        
     }
 
     IEnumerator HistoryRepeat()

@@ -299,64 +299,64 @@
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Google.PackageManagerResolver">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.PackageManagerResolver.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.PackageManagerResolver.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Messaging.Editor">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Firebase/Editor/Firebase.Messaging.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Editor/Firebase.Messaging.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.App">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.TaskExtension">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
      </Reference>
      <Reference Include="Google.VersionHandler">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
      </Reference>
      <Reference Include="Google.IOSResolver">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.IOSResolver.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.IOSResolver.dll</HintPath>
      </Reference>
      <Reference Include="Photon3Unity3D">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Plugins/Photon3Unity3D.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Messaging">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.Messaging.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.Messaging.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Editor">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Tasks">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
      </Reference>
      <Reference Include="Google.VersionHandlerImpl">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.VersionHandlerImpl.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.VersionHandlerImpl.dll</HintPath>
      </Reference>
      <Reference Include="Google.JarResolver">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.JarResolver.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/ExternalDependencyManager/Editor/1.2.167/Google.JarResolver.dll</HintPath>
      </Reference>
      <Reference Include="Google.MiniJson">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Platform">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Compat">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -737,10 +737,10 @@
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>/Users/user/UnityProjects/GitProjects/Ludo-Ludo-Hub/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+     <HintPath>/Users/user/UnityProjects/GitProject/Ludo-Ludo-Hub/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

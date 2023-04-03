@@ -83,7 +83,6 @@ public class GameGUIController : PunBehaviour
     private Color[] borderColors = new Color[4] { Color.yellow, Color.green, Color.red, Color.blue };
 
     private int currentPlayerIndex;
-
     public int ActivePlayersInRoom;
 
     private Sprite[] emojiSprites;
@@ -535,7 +534,8 @@ public class GameGUIController : PunBehaviour
             Players[3].GetComponent<PlayerAvatarController>().ScoreText.gameObject.SetActive(false);
 
         }
-        CheckPlayersIfShouldFinishGame(true);
+        
+        //CheckPlayersIfShouldFinishGame(true); // ==> Point 1
 
         StartCoroutine(waitForPlayersToStart());
     }
@@ -918,25 +918,19 @@ public class GameGUIController : PunBehaviour
 
     public void ShowGameFinishWindow()
     {
-print("ShowGameFinishWindow");
+        // print("ShowGameFinishWindow");
         if (!FinishWindowActive)
         {
             //AdsManager.Instance.adsScript.ShowAd(AdLocation.GameFinishWindow);
             FinishWindowActive = true;
+            var playerToAdd = playerObjects.Where(x => x.AvatarObject.GetComponent<PlayerAvatarController>().Active
+                                                       && x.AvatarObject.GetComponent<PlayerAvatarController>()
+                                                           .finished == false);
 
-            List<PlayerObject> otherPlayers = new List<PlayerObject>();
-
-            for (int i = 0; i < playerObjects.Count; i++)
-            {
-                PlayerAvatarController controller = playerObjects[i].AvatarObject.GetComponent<PlayerAvatarController>();
-                if (controller.Active && !controller.finished)
-                {
-                    otherPlayers.Add(playerObjects[i]);
-                }
-            }
+            var otherPlayers = playerToAdd.ToList();
             // GameManager.Instance.initMenuScript.PlayBackgroundMusic();
-
-            GameFinishWindow.GetComponent<GameFinishWindowController>().showWindow(playersFinished, otherPlayers,firstPlacePrize, secondPlacePrize,playerObjects);
+        
+             GameFinishWindow.GetComponent<GameFinishWindowController>().showWindow(playersFinished, otherPlayers,firstPlacePrize, secondPlacePrize,playerObjects);
         }
     }
 
@@ -1009,12 +1003,15 @@ print("ShowGameFinishWindow");
         SetFinishGame(PhotonNetwork.player.NickName, true);
     }
     private string Wintype = "twoplayerwin";
-    private bool FinishedGamee = false;
+    private bool FinishedGamee;
     private void SetFinishGame(string id, bool me)
     {
         print("SetFinishGame" + me);
-        if (FinishedGamee)
-            return;
+        // if (FinishedGamee)
+        // {
+        //     print("Going from Set Finish game.");
+        //     return;
+        // }
 
         FinishedGamee = true;
         Debug.Log("id====" + id + "me=====" + me);
@@ -1028,7 +1025,9 @@ print("ShowGameFinishWindow");
 
             if (index == -1)
                 index = 0;
-            playersFinished.Add(playerObjects[index]);
+            
+            if(playersFinished.Contains(playerObjects[index]) == false)
+                playersFinished.Add(playerObjects[index]);
 
             PlayerAvatarController controller = playerObjects[index].AvatarObject.GetComponent<PlayerAvatarController>();
             controller.Name.GetComponent<Text>().text = "";
@@ -1096,7 +1095,8 @@ print("ShowGameFinishWindow");
                 SendFinishTurn();
             }
             controller.setPositionSprite(position);
-            //CheckPlayersIfShouldFinishGame(false);
+            CheckPlayersIfShouldFinishGame(false);
+            FinishedGamee = false;
         }
     }
     private IEnumerator WinAmount(int win,bool status)
@@ -1441,31 +1441,48 @@ print("ShowGameFinishWindow");
     public void CheckPlayersIfShouldFinishGame(bool won)
     {
         print("CheckPlayerIfShowFinishGame"+won);
-        if (!FinishWindowActive)
+        print($"Active Players in the room is {ActivePlayersInRoom}");
+
+        if (FinishWindowActive) return;
+        
+        if (GameManager.Instance.type == MyGameType.TwoPlayer)
         {
-            if ((ActivePlayersInRoom == 1 && !iFinished))
+            if (ActivePlayersInRoom == 1)
             {
                 StopAndFinishGame(won);
-                return;
             }
-
-            if (ActivePlayersInRoom == 0)
+        }
+        else if(GameManager.Instance.type == MyGameType.FourPlayer)
+        {
+                if (ActivePlayersInRoom == GameManager.Instance.winnersNumber)
+                {
+                    StopAndFinishGame(won);
+                }
+        }
+        return;
+        switch (ActivePlayersInRoom)
+        {
+            case 1:
             {
                 StopAndFinishGame(won);
+
+                if (iFinished)
+                {
+                    if (CheckIfOtherPlayerIsBot())
+                    {
+                        AddBotToListOfWinners();
+                    }
+                
+                    if (ActivePlayersInRoom > 1)
+                    {
+                        TIPButtonObject.SetActive(true);
+                    }
+                }
                 return;
             }
-
-            if (iFinished && ActivePlayersInRoom == 1 && CheckIfOtherPlayerIsBot())
-            {
-                AddBotToListOfWinners();
+            case 0:
                 StopAndFinishGame(won);
-                return;
-            }
-
-            if (ActivePlayersInRoom > 1 && iFinished)
-            {
-                TIPButtonObject.SetActive(true);
-            }
+                break;
         }
     }
     public void AddBotToListOfWinners()
@@ -1474,7 +1491,8 @@ print("ShowGameFinishWindow");
         {
             if (playerObjects[i].id.Contains("_BOT") && playerObjects[i].AvatarObject.GetComponent<PlayerAvatarController>().Active)
             {
-                playersFinished.Add(playerObjects[i]);
+                if(playersFinished.Contains(playerObjects[i]) == false)
+                    playersFinished.Add(playerObjects[i]);
             }
         }
     }

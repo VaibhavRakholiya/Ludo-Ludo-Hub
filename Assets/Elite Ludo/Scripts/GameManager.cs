@@ -173,6 +173,8 @@ public class GameManager
     public bool MadeLocalMove = false;
     public bool isPlayingWithComputer = false;
     public string avatarIndex = "0";
+
+    public int winnersNumber = 1;
     // Game settings
 
     // 50, 100, 500, 2500, 10 000, 50 000, 100 000, 250 000, 500 000, 2 500 000, 5 000 000, 10 000 000, 15 000 000

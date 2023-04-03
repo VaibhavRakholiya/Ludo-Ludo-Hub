@@ -4032,9 +4032,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ebb5626b1335479eb7062356315c75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCustomPawnPath: 1
-  isCustomDice: 1
-  customPawnPath: 50
+  isCustomPawnPath: 0
+  isCustomDice: 0
+  customPawnPath: 54
   customDiceAmount: 2
 --- !u!1 &673929284
 GameObject:
